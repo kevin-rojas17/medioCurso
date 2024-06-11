@@ -1,0 +1,20 @@
+services:
+  user_api:
+    build:
+      context: ./user_api
+      dockerfile: Dockerfile
+    #image: nodejs
+    container_name: user_api
+    restart: unless-stopped
+    ports:
+      - "81:8080"
+
+  comedor_api:
+    build:
+      context: ./comedor_api
+      dockerfile: Dockerfile
+    #image: nodejs
+    container_name: comedor_api
+    restart: unless-stopped
+    ports:
+      - "82:8080"

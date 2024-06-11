@@ -1,0 +1,23 @@
+@startuml
+
+component prestamosFrontend
+node contenedor1 { 
+[prestamosAPI]
+}
+node contenedor2{
+ [pagosAPI]
+}
+node contenedor3{
+component personAPI
+}
+node contenedor4 {
+component companyAPI
+}
+
+prestamosFrontend -- pagosAPI
+pagosAPI -- prestamosAPI
+prestamosFrontend -- prestamosAPI
+prestamosFrontend -- personAPI
+prestamosFrontend -- companyAPI
+
+@enduml

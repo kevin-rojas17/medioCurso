@@ -1,0 +1,2 @@
+# Kubernetes Multi Contenedor
+Cuando trabajamos con un proyecto con micro servicios, seran varios proyectos que deberan levantarse en un solo Cluster. Estos proyectos deberan intercambiar informacion entre ellos sea mediante REST, WebSocket u otro estilo. Para lograr eso revisar el archivo.
